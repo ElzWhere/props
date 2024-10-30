@@ -16,7 +16,7 @@ spec:
   source:
     repoURL: https://github.com/ElzWhere/props
     targetRevision: HEAD
-    path: argocd/app
+    path: argocd/base
 
   syncPolicy:
     automated:
