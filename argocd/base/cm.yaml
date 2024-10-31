@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: argocd-cm
+data:
+  exec.enabled: "true"
+
+
+  timeout.reconciliation: 300s
+  # timeout.reconciliation.jitter: 2m
+
+  kustomize.buildOptions: --enable-helm
+
+  application.resourceTrackingMethod: annotation
